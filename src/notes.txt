@@ -1,0 +1,16 @@
+Packages:
+- ar track alvar
+- usb cam
+- geometry_msgs
+- std_msgs
+- rospy
+- sensor_msgs
+
+
+Task 1:
+- Create launch file that starts the God Cam and ar_track-alvar node
+- Creat script/node? that determines when a robot crosses the finish line and STOPS BOTH BOTS
+- Create script/node? that sets the inital velocites for each turtlebot and tasks each toward the finish line
+
+Task 5:
+- Identify a good path planning algo/package/library and 

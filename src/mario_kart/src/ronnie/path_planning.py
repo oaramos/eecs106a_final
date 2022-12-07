@@ -3,12 +3,11 @@ import rospy
 
 from geometry_msgs.msg import Point 
 from sensor_msgs.msg import LaserScan
-from nav_msgs.msg import Odemetry 
 from tf import transformations 
 
 from mario_kart.msg import positions
 from std_srvs.srv import * 
-from move_to_finish import * 
+
 
 import math 
 
@@ -47,20 +46,20 @@ def main():
 
 def callback(msg):
     global desired_position, position, yaw
-    desired_position.x = msg.finish_line.pose.position.x
-    desired_position.y = msg.finish_line.pose.position.y
+    desired_position.x = msg.finish_line_position.pose.position.x
+    desired_position.y = msg.finish_line_position.pose.position.y
     desired_position.z = 0 
 
-    position.x = msg...
-    position.y = msg...
+    position.x = msg.mario_position.pose.position.x
+    position.y = msg.mario_position.pose.position.y
     position.z = 0
 
     # yaw
     quaternion = (
-        msg.pose.pose.orientation.x,
-        msg.pose.pose.orientation.y,
-        msg.pose.pose.orientation.z,
-        msg.pose.pose.orientation.w)
+        msg.mario_position.pose.orientation.x,
+        msg.mario_position.pose.orientation.y,
+        msg.mario_position.pose.orientation.z,
+        msg.mario_position.pose.orientation.w)
     euler = transformations.euler_from_quaternion(quaternion)
     yaw = euler[2]
 

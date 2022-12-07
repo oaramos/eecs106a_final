@@ -5,14 +5,14 @@ from std_msgs.msg import String
 from mario_kart.msg import positions
 from ar_track_alvar_msgs.msg import AlvarMarkers
 
-TURTLEBOT_MARKER = "ar_marker_0"
+TURTLEBOT_MARKER = 9
 FINISH_LINE_MARKER = 11
 
 def publish_positions(curr_position_msg):
+    r = rospy.Rate(5)
     pub = rospy.Publisher('lakitu', positions, queue_size=10)
     pub.publish(curr_position_msg)
     print('*****PUBLISHED POSITION_MSG*****')
-    r = rospy.Rate(10)
     r.sleep()
 
 
@@ -33,8 +33,7 @@ def callback(markers_msg):
         if markers_msg.markers[x].id == TURTLEBOT_MARKER:
             position_msg.mario_position = markers_msg.markers[x].pose
         #if marker is finish_line
-        if markers_msg.markers[x].id == FINISH_LINE_MARKER:
-            markers_msg.markers[x].pose.position
+        elif markers_msg.markers[x].id == FINISH_LINE_MARKER:
             position_msg.finish_line_position = markers_msg.markers[x].pose
         else:
             position_msg.items_position.append(markers_msg.markers[x].pose)
@@ -65,6 +64,6 @@ if __name__ == '__main__':
     # /listener_<id>, where <id> is a randomly generated numeric string. This
     # randomly generated name means we can start multiple copies of this node
     # without having multiple nodes with the same name, which ROS doesn't allow.
-    rospy.init_node('lakitu', anonymous=True)
+    rospy.init_node('lakitu')
 
     lakitu()

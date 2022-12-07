@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_fina
 # The main recursive "all" target.
 all: gtest/all
 all: ar_track_alvar/ar_track_alvar_msgs/all
+all: lab4_cam/all
 all: mario_kart/all
 all: ar_track_alvar/ar_track_alvar/all
 all: usb_cam/all
@@ -64,6 +65,7 @@ all: usb_cam/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: ar_track_alvar/ar_track_alvar_msgs/preinstall
+preinstall: lab4_cam/preinstall
 preinstall: mario_kart/preinstall
 preinstall: ar_track_alvar/ar_track_alvar/preinstall
 preinstall: usb_cam/preinstall
@@ -78,6 +80,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: ar_track_alvar/ar_track_alvar_msgs/clean
+clean: lab4_cam/clean
 clean: mario_kart/clean
 clean: ar_track_alvar/ar_track_alvar/clean
 clean: usb_cam/clean
@@ -309,6 +312,40 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
+# Directory level rules for directory lab4_cam
+
+# Recursive "all" directory target.
+lab4_cam/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all
+
+.PHONY : lab4_cam/all
+
+# Recursive "preinstall" directory target.
+lab4_cam/preinstall:
+
+.PHONY : lab4_cam/preinstall
+
+# Recursive "clean" directory target.
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_genpy.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_geneus.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/clean
+lab4_cam/clean: lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/clean
+
+.PHONY : lab4_cam/clean
+
+#=============================================================================
 # Directory level rules for directory mario_kart
 
 # Recursive "all" directory target.
@@ -322,11 +359,7 @@ mario_kart/preinstall:
 .PHONY : mario_kart/preinstall
 
 # Recursive "clean" directory target.
-mario_kart/clean: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-mario_kart/clean: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-mario_kart/clean: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-mario_kart/clean: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-mario_kart/clean: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+mario_kart/clean:
 
 .PHONY : mario_kart/clean
 
@@ -1235,139 +1268,472 @@ ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_gennodejs.dir/
 .PHONY : ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_gennodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_genpy.dir
 
 # All Build rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+lab4_cam/CMakeFiles/lab4_cam_genpy.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_genpy.dir/build.make lab4_cam/CMakeFiles/lab4_cam_genpy.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_genpy.dir/build.make lab4_cam/CMakeFiles/lab4_cam_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target lab4_cam_genpy"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_genpy.dir/all
 
 # Build rule for subdir invocation for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+lab4_cam/CMakeFiles/lab4_cam_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_genpy.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+lab4_cam_genpy: lab4_cam/CMakeFiles/lab4_cam_genpy.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_py
+.PHONY : lab4_cam_genpy
 
 # clean rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+lab4_cam/CMakeFiles/lab4_cam_genpy.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_genpy.dir/build.make lab4_cam/CMakeFiles/lab4_cam_genpy.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_genpy.dir/clean
 
 #=============================================================================
-# Target rules for target mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir
 
 # All Build rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/all: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=69,70 "Built target lab4_cam_generate_messages_py"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_nodejs: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+lab4_cam_generate_messages_py: lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_nodejs
+.PHONY : lab4_cam_generate_messages_py
 
 # clean rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/all: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=68 "Built target lab4_cam_generate_messages_nodejs"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+lab4_cam_generate_messages_nodejs: lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# clean rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-
-#=============================================================================
-# Target rules for target mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
+.PHONY : lab4_cam_generate_messages_nodejs
 
 # clean rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+# Target rules for target lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_cpp: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+sensor_msgs_generate_messages_cpp: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_cpp
 
 # clean rule for target.
-mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_gencpp.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target lab4_cam_gencpp"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/rule
+
+# Convenience name for target.
+lab4_cam_gencpp: lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/rule
+
+.PHONY : lab4_cam_gencpp
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/all: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=67 "Built target lab4_cam_generate_messages_lisp"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+lab4_cam_generate_messages_lisp: lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/rule
+
+.PHONY : lab4_cam_generate_messages_lisp
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_genlisp.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target lab4_cam_genlisp"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/rule
+
+# Convenience name for target.
+lab4_cam_genlisp: lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/rule
+
+.PHONY : lab4_cam_genlisp
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# clean rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_geneus.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_geneus.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_geneus.dir/build.make lab4_cam/CMakeFiles/lab4_cam_geneus.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_geneus.dir/build.make lab4_cam/CMakeFiles/lab4_cam_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target lab4_cam_geneus"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_geneus.dir/rule
+
+# Convenience name for target.
+lab4_cam_geneus: lab4_cam/CMakeFiles/lab4_cam_geneus.dir/rule
+
+.PHONY : lab4_cam_geneus
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_geneus.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_geneus.dir/build.make lab4_cam/CMakeFiles/lab4_cam_geneus.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_py.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_lisp.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target lab4_cam_generate_messages"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/rule
+
+# Convenience name for target.
+lab4_cam_generate_messages: lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/rule
+
+.PHONY : lab4_cam_generate_messages
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/all: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=65,66 "Built target lab4_cam_generate_messages_eus"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+lab4_cam_generate_messages_eus: lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/rule
+
+.PHONY : lab4_cam_generate_messages_eus
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/all: lab4_cam/CMakeFiles/lab4_cam_generate_messages_nodejs.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/build.make lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/build.make lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target lab4_cam_gennodejs"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/rule
+
+# Convenience name for target.
+lab4_cam_gennodejs: lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/rule
+
+.PHONY : lab4_cam_gennodejs
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/build.make lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_gennodejs.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all:
+	$(MAKE) -f lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/build.make lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/build.make lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target _lab4_cam_generate_messages_check_deps_ImageSrv"
+.PHONY : lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/rule
+
+# Convenience name for target.
+_lab4_cam_generate_messages_check_deps_ImageSrv: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/rule
+
+.PHONY : _lab4_cam_generate_messages_check_deps_ImageSrv
+
+# clean rule for target.
+lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/build.make lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/clean
+.PHONY : lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/clean
+
+#=============================================================================
+# Target rules for target lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir
+
+# All Build rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/all: lab4_cam/CMakeFiles/_lab4_cam_generate_messages_check_deps_ImageSrv.dir/all
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/depend
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=64 "Built target lab4_cam_generate_messages_cpp"
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+lab4_cam_generate_messages_cpp: lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/rule
+
+.PHONY : lab4_cam_generate_messages_cpp
+
+# clean rule for target.
+lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/clean:
+	$(MAKE) -f lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/build.make lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/clean
+.PHONY : lab4_cam/CMakeFiles/lab4_cam_generate_messages_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_cc_ee106a_fa22_class_ee106a-acd_Documents_eecs106a_final_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-full.test.dir
@@ -1814,11 +2180,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_t
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundlesNoKinect.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all
@@ -1930,11 +2296,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alv
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
@@ -2048,11 +2414,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alv
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
@@ -2165,11 +2531,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all
@@ -2242,7 +2608,7 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/depend
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=64,65 "Built target medianFilter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=71,72 "Built target medianFilter"
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2281,11 +2647,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alva
 ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/kinect_filtering.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
@@ -2450,11 +2816,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
@@ -2592,11 +2958,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar
 ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/createMarker.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all
@@ -2789,11 +3155,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_t
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkersNoKinect.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all
@@ -4583,11 +4949,11 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alv
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/ar_track_alvar_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: mario_kart/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: lab4_cam/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/all
@@ -4660,7 +5026,7 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alv
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/depend
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=66,67 "Built target trainMarkerBundle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=73,74 "Built target trainMarkerBundle"
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4930,7 +5296,7 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/actionlib_msgs_generate_messages_lisp.d
 usb_cam/CMakeFiles/usb_cam_node.dir/all: usb_cam/CMakeFiles/usb_cam.dir/all
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=70,71 "Built target usb_cam_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=77,78 "Built target usb_cam_node"
 .PHONY : usb_cam/CMakeFiles/usb_cam_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4957,7 +5323,7 @@ usb_cam/CMakeFiles/usb_cam_node.dir/clean:
 usb_cam/CMakeFiles/usb_cam.dir/all:
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=68,69 "Built target usb_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=75,76 "Built target usb_cam"
 .PHONY : usb_cam/CMakeFiles/usb_cam.dir/all
 
 # Build rule for subdir invocation for target.

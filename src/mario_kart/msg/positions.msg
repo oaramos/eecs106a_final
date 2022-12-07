@@ -1,0 +1,3 @@
+geometry_msgs/PoseStamped mario_position
+geometry_msgs/PoseStamped finish_line_position
+geometry_msgs/PoseStamped[] items_position

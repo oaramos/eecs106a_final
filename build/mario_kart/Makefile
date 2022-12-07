@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_fina
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -91,16 +79,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -135,6 +113,28 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart/CMakeFiles/progress.marks
@@ -167,19 +167,211 @@ depend:
 	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_generate_messages.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages.dir/rule
+
+# Convenience name for target.
+mario_kart_generate_messages: mario_kart/CMakeFiles/mario_kart_generate_messages.dir/rule
+
+.PHONY : mario_kart_generate_messages
+
+# fast build rule for target.
+mario_kart_generate_messages/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages.dir/build
+.PHONY : mario_kart_generate_messages/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+mario_kart_generate_messages_nodejs: mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule
+
+.PHONY : mario_kart_generate_messages_nodejs
+
+# fast build rule for target.
+mario_kart_generate_messages_nodejs/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build
+.PHONY : mario_kart_generate_messages_nodejs/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+mario_kart_generate_messages_cpp: mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/rule
+
+.PHONY : mario_kart_generate_messages_cpp
+
+# fast build rule for target.
+mario_kart_generate_messages_cpp/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build
+.PHONY : mario_kart_generate_messages_cpp/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_gencpp.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_gencpp.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_gencpp.dir/rule
+
+# Convenience name for target.
+mario_kart_gencpp: mario_kart/CMakeFiles/mario_kart_gencpp.dir/rule
+
+.PHONY : mario_kart_gencpp
+
+# fast build rule for target.
+mario_kart_gencpp/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_gencpp.dir/build.make mario_kart/CMakeFiles/mario_kart_gencpp.dir/build
+.PHONY : mario_kart_gencpp/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+mario_kart_generate_messages_eus: mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/rule
+
+.PHONY : mario_kart_generate_messages_eus
+
+# fast build rule for target.
+mario_kart_generate_messages_eus/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build
+.PHONY : mario_kart_generate_messages_eus/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+mario_kart_generate_messages_lisp: mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/rule
+
+.PHONY : mario_kart_generate_messages_lisp
+
+# fast build rule for target.
+mario_kart_generate_messages_lisp/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build
+.PHONY : mario_kart_generate_messages_lisp/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_genpy.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_genpy.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_genpy.dir/rule
+
+# Convenience name for target.
+mario_kart_genpy: mario_kart/CMakeFiles/mario_kart_genpy.dir/rule
+
+.PHONY : mario_kart_genpy
+
+# fast build rule for target.
+mario_kart_genpy/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_genpy.dir/build.make mario_kart/CMakeFiles/mario_kart_genpy.dir/build
+.PHONY : mario_kart_genpy/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_geneus.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_geneus.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_geneus.dir/rule
+
+# Convenience name for target.
+mario_kart_geneus: mario_kart/CMakeFiles/mario_kart_geneus.dir/rule
+
+.PHONY : mario_kart_geneus
+
+# fast build rule for target.
+mario_kart_geneus/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_geneus.dir/build.make mario_kart/CMakeFiles/mario_kart_geneus.dir/build
+.PHONY : mario_kart_geneus/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_genlisp.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_genlisp.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_genlisp.dir/rule
+
+# Convenience name for target.
+mario_kart_genlisp: mario_kart/CMakeFiles/mario_kart_genlisp.dir/rule
+
+.PHONY : mario_kart_genlisp
+
+# fast build rule for target.
+mario_kart_genlisp/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_genlisp.dir/build.make mario_kart/CMakeFiles/mario_kart_genlisp.dir/build
+.PHONY : mario_kart_genlisp/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_gennodejs.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_gennodejs.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_gennodejs.dir/rule
+
+# Convenience name for target.
+mario_kart_gennodejs: mario_kart/CMakeFiles/mario_kart_gennodejs.dir/rule
+
+.PHONY : mario_kart_gennodejs
+
+# fast build rule for target.
+mario_kart_gennodejs/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_gennodejs.dir/build.make mario_kart/CMakeFiles/mario_kart_gennodejs.dir/build
+.PHONY : mario_kart_gennodejs/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/rule
+.PHONY : mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/rule
+
+# Convenience name for target.
+_mario_kart_generate_messages_check_deps_positions: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/rule
+
+.PHONY : _mario_kart_generate_messages_check_deps_positions
+
+# fast build rule for target.
+_mario_kart_generate_messages_check_deps_positions/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/build
+.PHONY : _mario_kart_generate_messages_check_deps_positions/fast
+
+# Convenience name for target.
+mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/rule
+.PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/rule
+
+# Convenience name for target.
+mario_kart_generate_messages_py: mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/rule
+
+.PHONY : mario_kart_generate_messages_py
+
+# fast build rule for target.
+mario_kart_generate_messages_py/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build
+.PHONY : mario_kart_generate_messages_py/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mario_kart_generate_messages"
+	@echo "... mario_kart_generate_messages_nodejs"
+	@echo "... mario_kart_generate_messages_cpp"
 	@echo "... test"
+	@echo "... install/strip"
+	@echo "... mario_kart_gencpp"
+	@echo "... mario_kart_generate_messages_eus"
+	@echo "... mario_kart_generate_messages_lisp"
+	@echo "... mario_kart_genpy"
+	@echo "... mario_kart_geneus"
+	@echo "... mario_kart_genlisp"
+	@echo "... list_install_components"
+	@echo "... mario_kart_gennodejs"
+	@echo "... _mario_kart_generate_messages_check_deps_positions"
+	@echo "... mario_kart_generate_messages_py"
 .PHONY : help
 
 

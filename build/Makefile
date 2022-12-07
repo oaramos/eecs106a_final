@@ -805,6 +805,162 @@ lab4_cam_generate_messages_cpp/fast:
 .PHONY : lab4_cam_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named mario_kart_generate_messages
+
+# Build rule for target.
+mario_kart_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_generate_messages
+.PHONY : mario_kart_generate_messages
+
+# fast build rule for target.
+mario_kart_generate_messages/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages.dir/build
+.PHONY : mario_kart_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_generate_messages_nodejs
+
+# Build rule for target.
+mario_kart_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_generate_messages_nodejs
+.PHONY : mario_kart_generate_messages_nodejs
+
+# fast build rule for target.
+mario_kart_generate_messages_nodejs/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build
+.PHONY : mario_kart_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_generate_messages_cpp
+
+# Build rule for target.
+mario_kart_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_generate_messages_cpp
+.PHONY : mario_kart_generate_messages_cpp
+
+# fast build rule for target.
+mario_kart_generate_messages_cpp/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build
+.PHONY : mario_kart_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_gencpp
+
+# Build rule for target.
+mario_kart_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_gencpp
+.PHONY : mario_kart_gencpp
+
+# fast build rule for target.
+mario_kart_gencpp/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_gencpp.dir/build.make mario_kart/CMakeFiles/mario_kart_gencpp.dir/build
+.PHONY : mario_kart_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_generate_messages_eus
+
+# Build rule for target.
+mario_kart_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_generate_messages_eus
+.PHONY : mario_kart_generate_messages_eus
+
+# fast build rule for target.
+mario_kart_generate_messages_eus/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build
+.PHONY : mario_kart_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_generate_messages_lisp
+
+# Build rule for target.
+mario_kart_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_generate_messages_lisp
+.PHONY : mario_kart_generate_messages_lisp
+
+# fast build rule for target.
+mario_kart_generate_messages_lisp/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build
+.PHONY : mario_kart_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_genpy
+
+# Build rule for target.
+mario_kart_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_genpy
+.PHONY : mario_kart_genpy
+
+# fast build rule for target.
+mario_kart_genpy/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_genpy.dir/build.make mario_kart/CMakeFiles/mario_kart_genpy.dir/build
+.PHONY : mario_kart_genpy/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_geneus
+
+# Build rule for target.
+mario_kart_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_geneus
+.PHONY : mario_kart_geneus
+
+# fast build rule for target.
+mario_kart_geneus/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_geneus.dir/build.make mario_kart/CMakeFiles/mario_kart_geneus.dir/build
+.PHONY : mario_kart_geneus/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_genlisp
+
+# Build rule for target.
+mario_kart_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_genlisp
+.PHONY : mario_kart_genlisp
+
+# fast build rule for target.
+mario_kart_genlisp/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_genlisp.dir/build.make mario_kart/CMakeFiles/mario_kart_genlisp.dir/build
+.PHONY : mario_kart_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_gennodejs
+
+# Build rule for target.
+mario_kart_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_gennodejs
+.PHONY : mario_kart_gennodejs
+
+# fast build rule for target.
+mario_kart_gennodejs/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_gennodejs.dir/build.make mario_kart/CMakeFiles/mario_kart_gennodejs.dir/build
+.PHONY : mario_kart_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named _mario_kart_generate_messages_check_deps_positions
+
+# Build rule for target.
+_mario_kart_generate_messages_check_deps_positions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _mario_kart_generate_messages_check_deps_positions
+.PHONY : _mario_kart_generate_messages_check_deps_positions
+
+# fast build rule for target.
+_mario_kart_generate_messages_check_deps_positions/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/build
+.PHONY : _mario_kart_generate_messages_check_deps_positions/fast
+
+#=============================================================================
+# Target rules for targets named mario_kart_generate_messages_py
+
+# Build rule for target.
+mario_kart_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart_generate_messages_py
+.PHONY : mario_kart_generate_messages_py
+
+# fast build rule for target.
+mario_kart_generate_messages_py/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build
+.PHONY : mario_kart_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named run_tests_ar_track_alvar_roslaunch-check__home_cc_ee106a_fa22_class_ee106a-acd_Documents_eecs106a_final_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-full.test
 
 # Build rule for target.
@@ -2205,6 +2361,18 @@ help:
 	@echo "... lab4_cam_gennodejs"
 	@echo "... _lab4_cam_generate_messages_check_deps_ImageSrv"
 	@echo "... lab4_cam_generate_messages_cpp"
+	@echo "... mario_kart_generate_messages"
+	@echo "... mario_kart_generate_messages_nodejs"
+	@echo "... mario_kart_generate_messages_cpp"
+	@echo "... mario_kart_gencpp"
+	@echo "... mario_kart_generate_messages_eus"
+	@echo "... mario_kart_generate_messages_lisp"
+	@echo "... mario_kart_genpy"
+	@echo "... mario_kart_geneus"
+	@echo "... mario_kart_genlisp"
+	@echo "... mario_kart_gennodejs"
+	@echo "... _mario_kart_generate_messages_check_deps_positions"
+	@echo "... mario_kart_generate_messages_py"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_cc_ee106a_fa22_class_ee106a-acd_Documents_eecs106a_final_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-full.test"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_cc_ee106a_fa22_class_ee106a-acd_Documents_eecs106a_final_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-basic.test"
 	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_cc_ee106a_fa22_class_ee106a-acd_Documents_eecs106a_final_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test"

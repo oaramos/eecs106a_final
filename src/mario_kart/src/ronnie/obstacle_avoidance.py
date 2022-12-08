@@ -9,24 +9,34 @@ pub = None
 
 def callback_laser(msg):
     #length of range data from LaserScan 
-    idx = len(msg.ranges) // 5
+    idx = (len(msg.ranges)//2) // 5
     idx2 = idx+idx 
     idx3 = idx2+idx 
     idx4 = idx3+idx
     idx5 = idx4+idx
     #print(f"laser_scans:{msg.ranges}")
-    #print((msg.ranges))
-   
+    #print(len(msg.ranges))
+    #print(msg)
+    #print(idx)
+    print(min([x for x in msg.ranges[0:idx-1] if x > msg.range_min and x < msg.range_max]))
     regions = {
-        'right' : min([x for x in msg.ranges[0:idx-1] if x!=0.0]),
-        'fright': min([x for x in msg.ranges[idx:idx2-1] if x!=0.0]),
-        'front' : min([x for x in msg.ranges[idx2:idx3-1] if x!=0.0]),
-        'fleft' : min([x for x in msg.ranges[idx3:idx4-1] if x!=0.0]), 
-        'left'  : min([x for x in msg.ranges[idx4:idx5-1] if x!=0.0])
+        'front': min([x for x in msg.ranges[0:idx-1] if x > msg.range_min and x < msg.range_max]),
+        'left' : min([x for x in msg.ranges[idx:idx2-1] if x > msg.range_min and x < msg.range_max]) 
+       #'fright': min([x for x in msg.ranges[idx:idx2-1] if x > msg.range_min and x < msg.range_max]),
+       #'front' : min([x for x in msg.ranges[idx2:idx3-1] if x > msg.range_min and x < msg.range_max]),
+       #'fleft' : min([x for x in msg.ranges[idx3:idx4-1] if x > msg.range_min and x < msg.range_max]), 
+       #'left'  : min([x for x in msg.ranges[idx4:idx5-1] if x > msg.range_min and x < msg.range_max])
+
+    #    'right' : min(msg.ranges[0:idx-1]),
+    #    'fright': min(msg.ranges[idx:idx2-1]),
+    #    'front' : min(msg.ranges[idx2:idx3-1]),
+    #    'fleft' : min(msg.ranges[idx3:idx4-1]), 
+    #    'left'  : min(msg.ranges[idx4:idx5-1])
     }
-    #rospy.loginfo(msg)
-    print(msg.range_min)
-    take_action(regions)
+
+    # rospy.loginfo(msg)
+    #print(regions)
+    #take_action(regions)
 
 def take_action(regions):
     msg = Twist()
@@ -35,8 +45,10 @@ def take_action(regions):
     
     state_description = ''
     d = 0.5
+    print(regions)
+  
     if regions['front'] > d and regions['fleft'] > d and regions['fright'] > d:
-        state_description = 'case  - nothing'
+        state_description = 'case 1 - nothing'
         linear_x = 0.2
         angular_z = 0
     elif regions['front'] < d and regions['fleft'] > d and regions['fright'] > d:
@@ -70,7 +82,7 @@ def take_action(regions):
     else:
         state_description = 'unknown case'
         #rospy.loginfo(regions)
-
+    
     #rospy.loginfo(state_description)
     msg.linear.x = linear_x
     msg.angular.z = angular_z
@@ -91,4 +103,5 @@ def main():
     rospy.spin()
 
 if __name__ == '__main__':
+    input("press enter:")
     main()

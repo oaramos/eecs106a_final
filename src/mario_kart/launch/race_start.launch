@@ -31,5 +31,6 @@
   
     <node name="turtlebot_controller_1" pkg="mario_kart" type="race_start.py" output="screen" args="lemon ar_marker_7 ar_marker_17"/>
     <node name="turtlebot_controller_2" pkg="mario_kart" type="race_start.py" output="screen" args="kiwi ar_marker_7 ar_marker_17"/>
+    
 
 </launch>

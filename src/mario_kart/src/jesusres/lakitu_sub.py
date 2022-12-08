@@ -5,8 +5,8 @@ from std_msgs.msg import String
 from mario_kart.msg import positions
 from ar_track_alvar_msgs.msg import AlvarMarkers
 
-TURTLEBOT_MARKER = 9
-FINISH_LINE_MARKER = 11
+TURTLEBOT_MARKER = 8
+FINISH_LINE_MARKER = 6
 
 def publish_positions(curr_position_msg):
     r = rospy.Rate(5)

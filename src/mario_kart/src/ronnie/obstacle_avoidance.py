@@ -4,6 +4,7 @@ import rospy
 
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
+import time
 pub = None
 
 def callback_laser(msg):
@@ -13,14 +14,18 @@ def callback_laser(msg):
     idx3 = idx2+idx 
     idx4 = idx3+idx
     idx5 = idx4+idx
+    #print(f"laser_scans:{msg.ranges}")
+    #print((msg.ranges))
+   
     regions = {
-        'right' : min(min(msg.ranges[0:idx-1]), 10),
-        'fright': min(min(msg.ranges[idx:idx2-1]), 10),
-        'front' : min(min(msg.ranges[idx2:idx3-1]), 10),
-        'fleft' : min(min(msg.ranges[idx3:idx4-1]), 10),
-        'left'  : min(min(msg.ranges[idx4:idx5-1]), 10),
+        'right' : min([x for x in msg.ranges[0:idx-1] if x!=0.0]),
+        'fright': min([x for x in msg.ranges[idx:idx2-1] if x!=0.0]),
+        'front' : min([x for x in msg.ranges[idx2:idx3-1] if x!=0.0]),
+        'fleft' : min([x for x in msg.ranges[idx3:idx4-1] if x!=0.0]), 
+        'left'  : min([x for x in msg.ranges[idx4:idx5-1] if x!=0.0])
     }
-    rospy.loginfo(msg)
+    #rospy.loginfo(msg)
+    print(msg.range_min)
     take_action(regions)
 
 def take_action(regions):
@@ -29,7 +34,7 @@ def take_action(regions):
     angular_z = 0
     
     state_description = ''
-    d = 0.8
+    d = 0.5
     if regions['front'] > d and regions['fleft'] > d and regions['fright'] > d:
         state_description = 'case  - nothing'
         linear_x = 0.2
@@ -64,9 +69,9 @@ def take_action(regions):
         angular_z = 0
     else:
         state_description = 'unknown case'
-        rospy.loginfo(regions)
+        #rospy.loginfo(regions)
 
-    rospy.loginfo(state_description)
+    #rospy.loginfo(state_description)
     msg.linear.x = linear_x
     msg.angular.z = angular_z
     pub.publish(msg)

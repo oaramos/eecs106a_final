@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/gennodejs/ros/mario_kart/msg/positions.js"
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/gennodejs/ros/mario_kart/srv/item.js"
   "CMakeFiles/mario_kart_generate_messages_nodejs"
 )
 

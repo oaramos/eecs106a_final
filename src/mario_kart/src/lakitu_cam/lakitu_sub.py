@@ -7,14 +7,14 @@ import tf2_ros
 import tf2_msgs.msg
 from ar_track_alvar_msgs.msg import AlvarMarkers
 
-TURTLEBOT_MARKER = "ar_marker_4"
-FINISH_LINE_MARKER = "ar_marker_5"
+TURTLEBOT_MARKER = "ar_marker_1"
+FINISH_LINE_MARKER = "ar_marker_3"
 
 def publish_positions(curr_position_msg):
     r = rospy.Rate(5)
     pub = rospy.Publisher('lakitu', positions, queue_size=10)
     pub.publish(curr_position_msg)
-    print('*****PUBLISHED POSITION_MSG*****')
+    #print('*****PUBLISHED POSITION_MSG*****')
     r.sleep()
 
 
@@ -28,17 +28,17 @@ def callback(transforms_msg):
      #   x.pose.postions.x *= 10
       #  x.pose.postions.y *= 10
 
+    #print(transforms_msg)
 
-
-    for x in range(len(transforms_msg)):
+    for x in range(len(transforms_msg.transforms)):
         #if marker is turtlebot
-        if transforms_msg[x].header.frame_id == TURTLEBOT_MARKER:
-            position_msg.mario_position = transforms_msg[x]
+        if transforms_msg.transforms[x].child_frame_id == TURTLEBOT_MARKER:
+            position_msg.mario_position = transforms_msg.transforms[x]
         #if marker is finish_line
-        elif transforms_msg[x].header.frame_id== FINISH_LINE_MARKER:
-            position_msg.finish_line_position = transforms_msg[x]
-        else:
-            position_msg.items_position.append(transforms_msg[x])
+        elif transforms_msg.transforms[x].child_frame_id== FINISH_LINE_MARKER:
+            position_msg.finish_line_position = transforms_msg.transforms[x]
+        # else:
+        #     position_msg.items_position.append(transforms_msg.transforms[x])
 
 
     print(f"*****POSITION_MSG*****: \n{position_msg}\n ***************")

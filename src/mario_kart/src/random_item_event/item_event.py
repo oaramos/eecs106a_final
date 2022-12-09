@@ -7,10 +7,41 @@
 import rospy
 import math
 from std_msgs.msg import String
+from geometry_msgs.msg import Twist
 from mario_kart.msg import positions
-from ar_track_alvar_msgs.msg import AlvarMarkers
-from scripts.activate_item import activate_item
+from mario_kart.srv import item
+import random
 
+used_items = []
+
+random_items={
+    'MUSHROOM': {
+        'linear': 1,
+        'angular': 0
+    },
+    'POISON MUSHROOM': {
+        'linear': 0,
+        'angular': 0
+    },
+    'LIGHTNING': {
+        'linear': 0,
+        'angular': 1
+    },
+    'BLUE SHELL': {
+        'linear': 0,
+        'angular': 1
+    },
+}
+
+def activate_item():
+    
+    item_key = random.choice(list(random_items.keys()))
+    print(item_key)
+    item_props = random_items[item_key]
+    item_msg = Twist()
+    item_msg.linear.x = item_props['linear']
+    item_msg.angular.x = item_props['angular']
+    return item_msg
 
 # Define the callback method which is called whenever this node receives a 
 # message on its subscribed topic. The received message is passed as the first
@@ -21,24 +52,30 @@ def callback(msg):
     position_kart_y = msg.mario_position.pose.position.y
 
     position_items = msg.items_position
-
-    for i in position_items:
-        if math.dist([position_kart_x, position_kart_y], [i.pose.position.x, i.pose.position.y]) <= .1:
-            # needs to get what the item is and have it affect the bot
-            # Initialize the client node 
-            rospy.init_node('item_client')
-            # Wait untill service is ready
-            rospy.wait_for_service('/item/server')
-            try:
-                 # Acquire service proxy
-                item_proxy = rospy.ServiceProxy(
-                    '/item/server', Twist)
-                item.loginfo('Activate item')
-                # Call patrol service via the proxy
-                item = activate_item()
-                item_proxy(item)
-            except rospy.ServiceException as e:
-                rospy.loginfo(e)
+    for item in position_items:
+        if math.dist([position_kart_x, position_kart_y], [item.pose.position.x, item.pose.position.y]) <= .5:
+            print('triggered')
+            if not item.header.frame_id in used_items:
+                # needs to get what the item is and have it affect the bot
+                # Initialize the client node 
+                # Wait untill service is ready
+                rospy.wait_for_service('/item/server')
+                try:
+                    # Acquire service proxy
+                    
+                    item_proxy = rospy.ServiceProxy(
+                        '/item/server', item)
+                    rospy.loginfo('Activate item')
+                    # Call patrol service via the proxy
+                    my_item = activate_item()
+                    
+                    item_proxy(my_item.linear.x, my_item.angular.x)
+                    used_items.append(item.header.frame_id)
+                    print('TEST')
+                    
+                except rospy.ServiceException as e:
+                    rospy.loginfo(e)
+                
 
 
 # Define the method which contains the node's main functionality
@@ -62,5 +99,4 @@ if __name__ == '__main__':
     # randomly generated name means we can start multiple copies of this node
     # without having multiple nodes with the same name, which ROS doesn't allow.
     rospy.init_node('item_event')
-
     listener()

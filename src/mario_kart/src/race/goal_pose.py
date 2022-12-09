@@ -4,19 +4,20 @@ import rospy
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from mario_kart.msg import positions
+import tf_conversions
 
 
 
-def active_cb(extra):
+def active_cb():
     rospy.loginfo("Goal pose being processed")
 
 def feedback_cb(feedback):
     rospy.loginfo("Current location: "+str(feedback))
     #Change to x?
-    goal_line = goal.pose.position.y - .15
-    if feedback.pose.positon.y in range(goal_line - .05, goal_line + .05):
-        print("FINISH LINE REACHED")
-        navclient.cancel_goal()
+    #goal_line = goal.pose.position.y - .15
+    #if feedback.pose.positon.y in range(goal_line - .05, goal_line + .05):
+        #print("FINISH LINE REACHED")
+        #navclient.cancel_goal()
 
 def done_cb(status, result):
     if status == 3:
@@ -32,24 +33,33 @@ if __name__ == "__main__":
 
     navclient = actionlib.SimpleActionClient('move_base',MoveBaseAction)
     navclient.wait_for_server()
-
-    positions = rospy.wait_for_message('/laktitu', positions)
+    print('client')
+    positions = rospy.wait_for_message('lakitu', positions)
     finish_tag = positions.finish_line_position
-    # Example of navigation goal
+ 
     goal = MoveBaseGoal()
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
 
+    goal.target_pose.pose.position.x = finish_tag.pose.position.x
+    goal.target_pose.pose.position.y = -finish_tag.pose.position.y
 
-    goal.target_pose.pose.position.x = finish_tag.transform.translation.x
-    goal.target_pose.pose.position.y = finish_tag.transform.translation.y
-    goal.target_pose.pose.position.z = 0.0
-    goal.target_pose.pose.orientation.x = finish_tag.transform.rotation.x
-    goal.target_pose.pose.orientation.y = finish_tag.transform.rotation.y
-    goal.target_pose.pose.orientation.z = finish_tag.transform.rotation.z
-    goal.target_pose.pose.orientation.w = finish_tag.transform.rotation.w
+    goal.target_pose.pose.orientation.x = 0
+    goal.target_pose.pose.orientation.y = 0
+    goal.target_pose.pose.orientation.z = -finish_tag.pose.orientation.z
+    goal.target_pose.pose.orientation.w = finish_tag.pose.orientation.w
 
-    navclient.send_goal(goal, done_cb, active_cb, feedback_cb)
+    # goal.target_pose.pose.position.x = 0.302
+    # goal.target_pose.pose.position.y = 0.29
+    # goal.target_pose.pose.orientation.x = 0.0
+    # goal.target_pose.pose.orientation.y = 0.0
+    # goal.target_pose.pose.orientation.z = -0.045314469250198046
+    # goal.target_pose.pose.orientation.w = 0.9989727718394396
+
+
+
+    print(goal)
+    goal = navclient.send_goal(goal, done_cb, active_cb, feedback_cb)
     finished = navclient.wait_for_result()
 
     if not finished:

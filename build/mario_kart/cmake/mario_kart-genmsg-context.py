@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg"
-services_str = ""
+services_str = "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv"
 pkg_name = "mario_kart"
 dependencies_str = "geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

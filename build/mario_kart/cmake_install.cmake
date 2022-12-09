@@ -42,6 +42,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mario_kart/srv" TYPE FILE FILES "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mario_kart/cmake" TYPE FILE FILES "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart/catkin_generated/installspace/mario_kart-msg-paths.cmake")
 endif()
 

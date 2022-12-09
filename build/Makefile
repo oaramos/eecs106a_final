@@ -2131,6 +2131,19 @@ mario_kart_generate_messages/fast:
 .PHONY : mario_kart_generate_messages/fast
 
 #=============================================================================
+# Target rules for targets named _mario_kart_generate_messages_check_deps_item
+
+# Build rule for target.
+_mario_kart_generate_messages_check_deps_item: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _mario_kart_generate_messages_check_deps_item
+.PHONY : _mario_kart_generate_messages_check_deps_item
+
+# fast build rule for target.
+_mario_kart_generate_messages_check_deps_item/fast:
+	$(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build
+.PHONY : _mario_kart_generate_messages_check_deps_item/fast
+
+#=============================================================================
 # Target rules for targets named mario_kart_generate_messages_nodejs
 
 # Build rule for target.
@@ -2463,6 +2476,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... mario_kart_generate_messages"
+	@echo "... _mario_kart_generate_messages_check_deps_item"
 	@echo "... mario_kart_generate_messages_nodejs"
 	@echo "... mario_kart_generate_messages_cpp"
 	@echo "... mario_kart_gencpp"

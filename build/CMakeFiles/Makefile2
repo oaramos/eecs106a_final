@@ -360,6 +360,7 @@ mario_kart/preinstall:
 
 # Recursive "clean" directory target.
 mario_kart/clean: mario_kart/CMakeFiles/mario_kart_generate_messages.dir/clean
+mario_kart/clean: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/clean
 mario_kart/clean: mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/clean
 mario_kart/clean: mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/clean
 mario_kart/clean: mario_kart/CMakeFiles/mario_kart_gencpp.dir/clean
@@ -2619,7 +2620,7 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/depend
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=78,79 "Built target medianFilter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=84,85 "Built target medianFilter"
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5037,7 +5038,7 @@ ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alv
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all: ar_track_alvar/ar_track_alvar/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/depend
 	$(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=80,81 "Built target trainMarkerBundle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=86,87 "Built target trainMarkerBundle"
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5316,7 +5317,7 @@ mario_kart/CMakeFiles/mario_kart_generate_messages.dir/all: mario_kart/CMakeFile
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages.dir/rule
@@ -5332,19 +5333,47 @@ mario_kart/CMakeFiles/mario_kart_generate_messages.dir/clean:
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages.dir/clean
 
 #=============================================================================
+# Target rules for target mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir
+
+# All Build rule for target.
+mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all:
+	$(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/depend
+	$(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num= "Built target _mario_kart_generate_messages_check_deps_item"
+.PHONY : mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
+
+# Build rule for subdir invocation for target.
+mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
+.PHONY : mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule
+
+# Convenience name for target.
+_mario_kart_generate_messages_check_deps_item: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule
+
+.PHONY : _mario_kart_generate_messages_check_deps_item
+
+# clean rule for target.
+mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/clean:
+	$(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/clean
+.PHONY : mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/clean
+
+#=============================================================================
 # Target rules for target mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir
 
 # All Build rule for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/all
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/depend
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=75 "Built target mario_kart_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=78,79 "Built target mario_kart_generate_messages_nodejs"
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule
@@ -5364,15 +5393,16 @@ mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/clean:
 
 # All Build rule for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
 mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/all
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/depend
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=71 "Built target mario_kart_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=71,72 "Built target mario_kart_generate_messages_cpp"
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_cpp.dir/rule
@@ -5399,7 +5429,7 @@ mario_kart/CMakeFiles/mario_kart_gencpp.dir/all: mario_kart/CMakeFiles/mario_kar
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_gencpp.dir/rule
@@ -5419,15 +5449,16 @@ mario_kart/CMakeFiles/mario_kart_gencpp.dir/clean:
 
 # All Build rule for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
 mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/all
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/depend
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=72,73 "Built target mario_kart_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=73,74,75 "Built target mario_kart_generate_messages_eus"
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/rule
@@ -5447,15 +5478,16 @@ mario_kart/CMakeFiles/mario_kart_generate_messages_eus.dir/clean:
 
 # All Build rule for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
 mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/all
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/depend
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=74 "Built target mario_kart_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=76,77 "Built target mario_kart_generate_messages_lisp"
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/rule
@@ -5482,7 +5514,7 @@ mario_kart/CMakeFiles/mario_kart_genpy.dir/all: mario_kart/CMakeFiles/mario_kart
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_genpy.dir/rule
@@ -5509,7 +5541,7 @@ mario_kart/CMakeFiles/mario_kart_geneus.dir/all: mario_kart/CMakeFiles/mario_kar
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_geneus.dir/rule
@@ -5536,7 +5568,7 @@ mario_kart/CMakeFiles/mario_kart_genlisp.dir/all: mario_kart/CMakeFiles/mario_ka
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_genlisp.dir/rule
@@ -5563,7 +5595,7 @@ mario_kart/CMakeFiles/mario_kart_gennodejs.dir/all: mario_kart/CMakeFiles/mario_
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_gennodejs.dir/rule
@@ -5610,15 +5642,16 @@ mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/cle
 
 # All Build rule for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/all: ar_track_alvar/ar_track_alvar_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/all
 mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/all: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_positions.dir/all
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/depend
 	$(MAKE) -f mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build.make mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=76,77 "Built target mario_kart_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=80,81,82,83 "Built target mario_kart_generate_messages_py"
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles 0
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/rule
@@ -5640,7 +5673,7 @@ mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/clean:
 usb_cam/CMakeFiles/usb_cam_node.dir/all: usb_cam/CMakeFiles/usb_cam.dir/all
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=84,85 "Built target usb_cam_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=90,91 "Built target usb_cam_node"
 .PHONY : usb_cam/CMakeFiles/usb_cam_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5667,7 +5700,7 @@ usb_cam/CMakeFiles/usb_cam_node.dir/clean:
 usb_cam/CMakeFiles/usb_cam.dir/all:
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=82,83 "Built target usb_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=88,89 "Built target usb_cam"
 .PHONY : usb_cam/CMakeFiles/usb_cam.dir/all
 
 # Build rule for subdir invocation for target.

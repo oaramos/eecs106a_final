@@ -5,8 +5,8 @@ from std_msgs.msg import String
 from mario_kart.msg import positions
 from ar_track_alvar_msgs.msg import AlvarMarkers
 
-TURTLEBOT_MARKER = 8
-FINISH_LINE_MARKER = 6
+TURTLEBOT_MARKER = 1
+FINISH_LINE_MARKER = 3
 
 def publish_positions(curr_position_msg):
     r = rospy.Rate(5)
@@ -32,11 +32,18 @@ def callback(markers_msg):
         #if marker is turtlebot
         if markers_msg.markers[x].id == TURTLEBOT_MARKER:
             position_msg.mario_position = markers_msg.markers[x].pose
+            # position_msg.mario_position.header.frame_id = str(markers_msg.markers[x].id)
         #if marker is finish_line
         elif markers_msg.markers[x].id == FINISH_LINE_MARKER:
             position_msg.finish_line_position = markers_msg.markers[x].pose
+            # position_msg.finish_line_position.header.frame_id = str(markers_msg.markers[x].id)
+
+
         else:
-            position_msg.items_position.append(markers_msg.markers[x].pose)
+            msg = markers_msg.markers[x].pose
+            # msg.header.frame_id = str(markers_msg.markers[x].id)
+            position_msg.items_position.append(msg)
+
 
 
     print(f"*****POSITION_MSG*****: \n{position_msg}\n ***************")

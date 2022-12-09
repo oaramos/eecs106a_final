@@ -54,27 +54,45 @@ CMAKE_BINARY_DIR = /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_fina
 include mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/progress.make
 
 mario_kart/CMakeFiles/mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py
+mario_kart/CMakeFiles/mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py
 mario_kart/CMakeFiles/mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/__init__.py
+mario_kart/CMakeFiles/mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/__init__.py
 
 
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG mario_kart/positions"
 	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg -Imario_kart:/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mario_kart -o /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg
 
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV mario_kart/item"
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv -Imario_kart:/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mario_kart -o /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv
+
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/__init__.py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for mario_kart"
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/__init__.py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for mario_kart"
 	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg --initpy
+
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/__init__.py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/__init__.py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for mario_kart"
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv --initpy
 
 mario_kart_generate_messages_py: mario_kart/CMakeFiles/mario_kart_generate_messages_py
 mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/_positions.py
+mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/_item.py
 mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/msg/__init__.py
+mario_kart_generate_messages_py: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/lib/python3/dist-packages/mario_kart/srv/__init__.py
 mario_kart_generate_messages_py: mario_kart/CMakeFiles/mario_kart_generate_messages_py.dir/build.make
 
 .PHONY : mario_kart_generate_messages_py

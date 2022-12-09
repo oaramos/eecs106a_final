@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "mario_kart: 1 messages, 0 services")
+message(STATUS "mario_kart: 1 messages, 1 services")
 
 set(MSG_I_FLAGS "-Imario_kart:/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -19,7 +19,12 @@ add_custom_target(mario_kart_generate_messages ALL)
 
 get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" NAME_WE)
 add_custom_target(_mario_kart_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mario_kart" "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" "geometry_msgs/Pose:geometry_msgs/Point:std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mario_kart" "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Point"
+)
+
+get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" NAME_WE)
+add_custom_target(_mario_kart_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "mario_kart" "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" "geometry_msgs/Twist:geometry_msgs/Vector3"
 )
 
 #
@@ -31,11 +36,17 @@ add_custom_target(_mario_kart_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(mario_kart
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mario_kart
 )
 
 ### Generating Services
+_generate_srv_cpp(mario_kart
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/mario_kart
+)
 
 ### Generating Module File
 _generate_module_cpp(mario_kart
@@ -51,6 +62,8 @@ add_dependencies(mario_kart_generate_messages mario_kart_generate_messages_cpp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" NAME_WE)
 add_dependencies(mario_kart_generate_messages_cpp _mario_kart_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" NAME_WE)
+add_dependencies(mario_kart_generate_messages_cpp _mario_kart_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(mario_kart_gencpp)
@@ -64,11 +77,17 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS mario_kart_generate_messages_cpp)
 _generate_msg_eus(mario_kart
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mario_kart
 )
 
 ### Generating Services
+_generate_srv_eus(mario_kart
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/mario_kart
+)
 
 ### Generating Module File
 _generate_module_eus(mario_kart
@@ -84,6 +103,8 @@ add_dependencies(mario_kart_generate_messages mario_kart_generate_messages_eus)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" NAME_WE)
 add_dependencies(mario_kart_generate_messages_eus _mario_kart_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" NAME_WE)
+add_dependencies(mario_kart_generate_messages_eus _mario_kart_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(mario_kart_geneus)
@@ -97,11 +118,17 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS mario_kart_generate_messages_eus)
 _generate_msg_lisp(mario_kart
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mario_kart
 )
 
 ### Generating Services
+_generate_srv_lisp(mario_kart
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/mario_kart
+)
 
 ### Generating Module File
 _generate_module_lisp(mario_kart
@@ -117,6 +144,8 @@ add_dependencies(mario_kart_generate_messages mario_kart_generate_messages_lisp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" NAME_WE)
 add_dependencies(mario_kart_generate_messages_lisp _mario_kart_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" NAME_WE)
+add_dependencies(mario_kart_generate_messages_lisp _mario_kart_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(mario_kart_genlisp)
@@ -130,11 +159,17 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS mario_kart_generate_messages_lisp)
 _generate_msg_nodejs(mario_kart
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mario_kart
 )
 
 ### Generating Services
+_generate_srv_nodejs(mario_kart
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/mario_kart
+)
 
 ### Generating Module File
 _generate_module_nodejs(mario_kart
@@ -150,6 +185,8 @@ add_dependencies(mario_kart_generate_messages mario_kart_generate_messages_nodej
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" NAME_WE)
 add_dependencies(mario_kart_generate_messages_nodejs _mario_kart_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" NAME_WE)
+add_dependencies(mario_kart_generate_messages_nodejs _mario_kart_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(mario_kart_gennodejs)
@@ -163,11 +200,17 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS mario_kart_generate_messages_nodejs
 _generate_msg_py(mario_kart
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mario_kart
 )
 
 ### Generating Services
+_generate_srv_py(mario_kart
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/mario_kart
+)
 
 ### Generating Module File
 _generate_module_py(mario_kart
@@ -182,6 +225,8 @@ add_dependencies(mario_kart_generate_messages mario_kart_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg" NAME_WE)
+add_dependencies(mario_kart_generate_messages_py _mario_kart_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv" NAME_WE)
 add_dependencies(mario_kart_generate_messages_py _mario_kart_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

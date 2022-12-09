@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/mario_kart/scripts"
+    ]
+}

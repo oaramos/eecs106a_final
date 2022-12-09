@@ -54,20 +54,29 @@ CMAKE_BINARY_DIR = /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_fina
 include mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/progress.make
 
 mario_kart/CMakeFiles/mario_kart_generate_messages_lisp: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp
+mario_kart/CMakeFiles/mario_kart_generate_messages_lisp: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp
 
 
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from mario_kart/positions.msg"
 	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg/positions.msg -Imario_kart:/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mario_kart -o /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg
 
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from mario_kart/item.srv"
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build/mario_kart && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/srv/item.srv -Imario_kart:/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/src/mario_kart/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mario_kart -o /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv
+
 mario_kart_generate_messages_lisp: mario_kart/CMakeFiles/mario_kart_generate_messages_lisp
 mario_kart_generate_messages_lisp: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp
+mario_kart_generate_messages_lisp: /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp
 mario_kart_generate_messages_lisp: mario_kart/CMakeFiles/mario_kart_generate_messages_lisp.dir/build.make
 
 .PHONY : mario_kart_generate_messages_lisp

@@ -9,11 +9,11 @@ import geometry_msgs.msg
 class FixedTFBroadcaster:
 
       def __init__(self):
-          self.pub_tf = rospy.Publisher("/tf", tf2_msgs.msg.TFMessage, queue_size=1)
+          self.pub_tf = rospy.Publisher("/tf", tf2_msgs.msg.TFMessage, queue_size=10)
   
           while not rospy.is_shutdown():
               # Run this loop at about 10Hz
-              rospy.sleep(0.05)
+              
   
               t = geometry_msgs.msg.TransformStamped()
               t.header.frame_id = "usb_cam"

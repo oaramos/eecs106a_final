@@ -10,14 +10,20 @@ import sys
 
 
 def item_callback(request):
-    pub = rospy.Publisher(
-        '/item/cmd_vel', Twist, queue_size=50)
     # Publish to cmd_vel at 5 Hz
     rate = rospy.Rate(5)
-    while not rospy.is_shutdown():
-        pub.publish(request)  # Publish to cmd_vel
-        rate.sleep()  # Sleep until 
-    return request  # This line will never be reached
+    vel = request.vel  # Linear velocity
+    omega = request.omega  # Angular velocity
+    pub = rospy.Publisher(
+        '/cmd_vel', Twist, queue_size=50)
+
+    cmd = Twist()
+    cmd.linear.x = vel
+    cmd.angular.z = omega
+
+    pub.publish(cmd)  # Publish to cmd_vel
+    rate.sleep()  # Sleep until 
+    return cmd # This line will never be reached
 
 def item_server():
     # Initialize the server node for turtle1
@@ -25,7 +31,7 @@ def item_server():
     # Register service
     rospy.Service(
         '/item/server',  # Service name
-        Twist,  # Service type
+        item,  # Service type
         item_callback  # Service callback
     )
     rospy.loginfo('Running item server...')

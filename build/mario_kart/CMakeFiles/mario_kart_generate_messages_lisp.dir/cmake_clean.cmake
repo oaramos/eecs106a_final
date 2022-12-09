@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/msg/positions.lisp"
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/common-lisp/ros/mario_kart/srv/item.lisp"
   "CMakeFiles/mario_kart_generate_messages_lisp"
 )
 

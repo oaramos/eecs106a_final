@@ -183,6 +183,21 @@ mario_kart_generate_messages/fast:
 .PHONY : mario_kart_generate_messages/fast
 
 # Convenience name for target.
+mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule
+.PHONY : mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule
+
+# Convenience name for target.
+_mario_kart_generate_messages_check_deps_item: mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/rule
+
+.PHONY : _mario_kart_generate_messages_check_deps_item
+
+# fast build rule for target.
+_mario_kart_generate_messages_check_deps_item/fast:
+	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build.make mario_kart/CMakeFiles/_mario_kart_generate_messages_check_deps_item.dir/build
+.PHONY : _mario_kart_generate_messages_check_deps_item/fast
+
+# Convenience name for target.
 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule:
 	cd /home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/build && $(MAKE) -f CMakeFiles/Makefile2 mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule
 .PHONY : mario_kart/CMakeFiles/mario_kart_generate_messages_nodejs.dir/rule
@@ -357,10 +372,11 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... mario_kart_generate_messages"
+	@echo "... _mario_kart_generate_messages_check_deps_item"
 	@echo "... mario_kart_generate_messages_nodejs"
 	@echo "... mario_kart_generate_messages_cpp"
-	@echo "... test"
 	@echo "... install/strip"
 	@echo "... mario_kart_gencpp"
 	@echo "... mario_kart_generate_messages_eus"

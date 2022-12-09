@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/roseus/ros/mario_kart/manifest.l"
   "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/roseus/ros/mario_kart/msg/positions.l"
+  "/home/cc/ee106a/fa22/class/ee106a-acd/Documents/eecs106a_final/devel/share/roseus/ros/mario_kart/srv/item.l"
   "CMakeFiles/mario_kart_generate_messages_eus"
 )
 

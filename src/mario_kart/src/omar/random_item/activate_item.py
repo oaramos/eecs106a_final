@@ -6,9 +6,11 @@ import random
 random_items={
     'MUSHROOM': {
         'linear': 1,
+        'angular': 0
     },
     'POISON MUSHROOM': {
-        'linear': 0
+        'linear': 0,
+        'angular': 0
     },
     'LIGHTNING': {
         'linear': 0,
@@ -22,11 +24,11 @@ random_items={
 
 def activate_item():
     item_key = random.choice(list(random_items.keys()))
-    item = random_items[item_key]
-    # item_msg = Twist()
-    # item_msg.linear.x = item['linear']
-    # if item.key == 'LIGHTNING' or item.key == 'BLUESHELL':
-    #     item_msg.angular.z = item
+    item_props = random_items[item_key]
+    item_msg = Twist()
+    item_msg.linear.x = item['linear']
+    if item.key == 'LIGHTNING' or item.key == 'BLUESHELL':
+        item_msg.angular.z = item
     return item_msg
 
 print(activate_item())

@@ -26,9 +26,7 @@ def activate_item():
     item_key = random.choice(list(random_items.keys()))
     item_props = random_items[item_key]
     item_msg = Twist()
-    item_msg.linear.x = item['linear']
-    if item.key == 'LIGHTNING' or item.key == 'BLUESHELL':
-        item_msg.angular.z = item
+    item_msg.linear.x = item_props['linear']
+    item_msg.angular.x = item_props['angular']
     return item_msg
 
-print(activate_item())

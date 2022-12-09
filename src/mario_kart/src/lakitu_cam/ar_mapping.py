@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # /listener_<id>, where <id> is a randomly generated numeric string. This
     # randomly generated name means we can start multiple copies of this node
     # without having multiple nodes with the same name, which ROS doesn't allow.
-    rospy.init_node('lakitu')
+    rospy.init_node('ar_mapping')
     tfBuffer = tf2_ros.Buffer()
     listener = tf2_ros.TransformListener(tfBuffer)
 
